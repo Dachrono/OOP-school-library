@@ -82,7 +82,7 @@ To get a local copy.
 
 ### Prerequisites
 
-Nothing
+In order to run this project you need to have Ruby installed, check [this](https://www.ruby-lang.org/en/) documentation in order to know how to install it.
 
 ### Setup
 
@@ -90,20 +90,33 @@ Clone this repository to your desired folder:
 
 sh
 cd my-folder
-git clone https://github.com/Dachrono/OOP-school-library.git
-
-<!-- 
+git clone https://github.com/Dachrono/OOP-school-library.git 
 
 ### Install
 
-You do not need install
+You do not need install anything more than ruby
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the command `ruby name_file.rb`. Example: you can run testing
 
-npm start
+```sh
+  ruby testing.rb
+```
 
+To check linter use:
+
+```sh
+  rubocop
+```
+
+To fix the linter use: 
+
+```sh
+  rubocop -a
+```
+
+<!--
 ### Run tests
 
 To run tests, run the following command:
