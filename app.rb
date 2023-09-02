@@ -85,7 +85,7 @@ class App
   end
 
   def select_person
-    puts 'Select number of your register'
+    puts 'Select index of this list (DO NOT USE ID)'
     list_all_people
     gets.chomp.strip.to_i
   end
@@ -106,9 +106,12 @@ class App
   def create_rental
     book = select_book
     person = select_person
-    date = enter_date
-
-    create_and_register_rental(book, person, date)
+    if person < @people.length && book < @books.length
+      date = enter_date
+      create_and_register_rental(book, person, date)
+    else
+      puts 'Wrong option!!! You need select a list index value'
+    end
   end
 
   def all_rentals
